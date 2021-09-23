@@ -381,10 +381,10 @@
         }
     };
     S.ShapeBuilder = (function () {
-        var gap = 7,
+        var gap = 3,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
-            fontSize = 150,
+            fontSize = 50,
             fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
