@@ -123,7 +123,7 @@
             document.body.classList.add('body--ready');
             //想说的话
             //S.UI.simulate("秋秋宝贝|生日快乐哟|爱你么么哒|#countdown 3|#rectangle 15x15|#circle 12 |#time");
-            S.UI.simulate("秋秋宝贝|生日快乐哟|爱你么么哒|#time");
+            S.UI.simulate("秋秋宝贝|你的幸福|我来建筑|你的贪图|我来满足|你的糊涂|我来弥补|你的任性|我来让步|爱护你|非我莫属|生日快乐哟|爱你么么哒|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -384,7 +384,7 @@
         var gap = 5,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
-            fontSize = 120,
+            fontSize = 130,
             fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
@@ -424,7 +424,7 @@
             return {dots: dots, w: w + fx, h: h + fy};
         }
         function setFontSize(s) {
-            shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
+            shapeContext.font = s + 'px ' + fontFamily;
         }
         function isNumber(n) {
             return !isNaN(parseFloat(n)) && isFinite(n);
@@ -578,7 +578,7 @@
 </script>
 <!--//音乐可改-->
 <audio autoplay="autoplay" loop="loop">
-    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
+    <source src="https://sw-sycdn.kuwo.cn/b5d8c80ace20770ae8d8d98bfb8be7a8/614c5eca/resource/n1/65/48/2640254243.mp3" type="audio/mpeg">
 </audio>
 </body>
 </html>
