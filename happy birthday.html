@@ -123,7 +123,7 @@
             document.body.classList.add('body--ready');
             //想说的话
             //S.UI.simulate("秋秋宝贝|生日快乐哟|爱你么么哒|#countdown 3|#rectangle 15x15|#circle 12 |#time");
-            S.UI.simulate("秋秋宝贝|你的幸福|我来建筑|你的贪图|我来满足|你的糊涂|我来弥补|你的任性|我来让步|爱护你|非我莫属|生日快乐哟|爱你么么哒|#time");
+            S.UI.simulate("秋秋宝贝|今天是你的生日|有一些话|我想对你说|往后余生|你的幸福|我来建筑|你的贪图|我来满足|你的糊涂|我来弥补|你的任性|我来让步|爱护你|非我莫属|生日快乐哟|爱你么么哒|高云杰|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -261,7 +261,7 @@
                     default:
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
-            }, 2000, sequence.length);
+            }, 2500, sequence.length);
         }
         return {
             simulate: function (action) {
