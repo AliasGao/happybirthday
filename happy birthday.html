@@ -575,39 +575,10 @@
         };
     }());
     S.init();
-    $(document).ready(function(){ 
-        //播放完毕
-        $('#mp3Btn').on('ended', function() {
-            console.log("音频已播放完成");
-            $('.btn-audio').removeClass('rotateClass');
-        });
-        //播放器控制
-        var audio = document.getElementById('mp3Btn');
-        audio.volume = .3;
-        $('.btn-audio').click(function() {
-
-            event.stopPropagation();//防止冒泡
-            if(audio.paused){ //如果当前是暂停状态
-                $('.btn-audio').addClass('rotateClass');
-                audio.play(); //播放
-                return;
-            }else{
-                //当前是播放状态
-                $('.btn-audio').removeClass('rotateClass');
-                audio.pause(); //暂停''
-            }
-        });
-    });
-    document.addEventListener("WeixinJSBridgeReady", function () { 
-        document.getElementById('mp3Btn').play(); 
-        // document.getElementById('video').play(); 
-    }, false);
 </script>
 <!--//音乐可改-->
-<audio autoplay="autoplay" loop="loop" id="mp3Btn">
-    //<source src="https://sw-sycdn.kuwo.cn/b5d8c80ace20770ae8d8d98bfb8be7a8/614c5eca/resource/n1/65/48/2640254243.mp3" type="audio/mpeg">
+<audio autoplay="autoplay" loop="loop" >
     <source src="./2640254243.mp3" type="audio/mpeg">
-    <embed height="50" width="100" src="https://sw-sycdn.kuwo.cn/b5d8c80ace20770ae8d8d98bfb8be7a8/614c5eca/resource/n1/65/48/2640254243.mp3">
 </audio>
 </body>
 </html>
